@@ -15,11 +15,11 @@ SpeakFlow is an intuitive desktop application for text-to-speech (TTS) synthesis
 
 Here are a few screenshots of the SpeakFlow application:
 
-![SpeakFlow - 1](screenshots/SpeakFlow - 1.png)
-![SpeakFlow - 2](screenshots/SpeakFlow - 2.png)
-![SpeakFlow - 3](screenshots/SpeakFlow - 3.png)
-![SpeakFlow - 4](screenshots/SpeakFlow - 4.png)
-![SpeakFlow - 5](screenshots/SpeakFlow - 5.png)
+![SpeakFlow - 1](screenshots/SpeakFlow-1.png)
+![SpeakFlow - 2](screenshots/SpeakFlow-2.png)
+![SpeakFlow - 3](screenshots/SpeakFlow-3.png)
+![SpeakFlow - 4](screenshots/SpeakFlow-4.png)
+![SpeakFlow - 5](screenshots/SpeakFlow-5.png)
 
 ## Installation and Running
 
