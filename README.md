@@ -26,7 +26,7 @@ Here are a few screenshots of the SpeakFlow application:
 ### Running the Pre-built Application (for end-users)
 
 The easiest way to run SpeakFlow is to download the compiled executable (.exe) from the [Releases](#releases) section of our repository.
-1. Go to the [Releases](#releases) section.
+1. Go to the **[latest release page](https://github.com/Olegiiich/SpeakFlow-TTS/releases/latest)**.
 2. Download the latest ZIP archive (e.g., `SpeakFlow_v1.0.0.zip`).
 3. Unpack the archive to any folder on your computer.
 4. Run `SpeakFlow.exe`.
