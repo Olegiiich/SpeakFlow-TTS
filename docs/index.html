@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #007bff;
+            --primary-color: #1a73e8; /* Використано як акцентний колір */
             --secondary-color: #6c757d;
             --background-color: #f8f9fa;
             --text-color: #343a40;
@@ -36,7 +36,8 @@
         }
 
         header {
-            background-color: var(--primary-color);
+            /* Темніший синій градієнт для верхньої частини */
+            background: linear-gradient(to right, #004d80, #007bff); /* Від темного до яскравого синього */
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -58,7 +59,7 @@
         .button {
             display: inline-block;
             background-color: white;
-            color: var(--primary-color);
+            color: #004d80; /* Темніший синій для кнопки, щоб контрастував з фоном */
             padding: 12px 25px;
             text-align: center;
             text-decoration: none;
@@ -72,7 +73,7 @@
 
         .button:hover {
             background-color: var(--light-grey);
-            color: var(--primary-color);
+            color: #004d80;
         }
 
         section {
@@ -84,7 +85,7 @@
         }
 
         section h2 {
-            color: var(--primary-color);
+            color: #004d80; /* Темніший синій для заголовків секцій */
             font-size: 2em;
             margin-bottom: 20px;
             text-align: center;
@@ -123,8 +124,19 @@
             height: auto;
             border-radius: 8px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-            display: block; /* Ensures no extra space below image */
+            display: block;
             margin: 0 auto;
+            transition: transform 0.2s ease-in-out; /* Анімація при наведенні */
+        }
+
+        .screenshots img:hover {
+            transform: scale(1.02); /* Злегка збільшуємо при наведенні */
+        }
+
+        /* Стиль для посилань на скріншотах */
+        .screenshots a {
+            text-decoration: none; /* Забираємо підкреслення */
+            display: block; /* Щоб посилання займало весь блок зображення */
         }
 
         footer {
@@ -132,13 +144,14 @@
             color: white;
             text-align: center;
             padding: 20px;
-            margin-top: auto; /* Pushes footer to the bottom */
+            margin-top: auto; /* Притискає футер до низу сторінки */
         }
 
         footer a {
             color: white;
             text-decoration: none;
             font-weight: bold;
+            margin: 0 5px; /* Невеликий відступ між посиланнями */
         }
 
         footer a:hover {
@@ -182,25 +195,35 @@
         <section id="screenshots">
             <h2>Screenshots</h2>
             <div class="screenshots">
-                <img src="screenshots/SpeakFlow-1.png" alt="SpeakFlow Screenshot 1: Main Interface">
-                <img src="screenshots/SpeakFlow-2.png" alt="SpeakFlow Screenshot 2: Language Selection">
-                <img src="screenshots/SpeakFlow-3.png" alt="SpeakFlow Screenshot 3: Voice Options">
-                <img src="screenshots/SpeakFlow-4.png" alt="SpeakFlow Screenshot 4: Text Input">
-                <img src="screenshots/SpeakFlow-5.png" alt="SpeakFlow Screenshot 5: Audio Playback">
+                <a href="screenshots/SpeakFlow-1.png" target="_blank">
+                    <img src="screenshots/SpeakFlow-1.png" alt="SpeakFlow Screenshot 1: Main Interface">
+                </a>
+                <a href="screenshots/SpeakFlow-2.png" target="_blank">
+                    <img src="screenshots/SpeakFlow-2.png" alt="SpeakFlow Screenshot 2: Language Selection">
+                </a>
+                <a href="screenshots/SpeakFlow-3.png" target="_blank">
+                    <img src="screenshots/SpeakFlow-3.png" alt="SpeakFlow Screenshot 3: Voice Options">
+                </a>
+                <a href="screenshots/SpeakFlow-4.png" target="_blank">
+                    <img src="screenshots/SpeakFlow-4.png" alt="SpeakFlow Screenshot 4: Text Input">
+                </a>
+                <a href="screenshots/SpeakFlow-5.png" target="_blank">
+                    <img src="screenshots/SpeakFlow-5.png" alt="SpeakFlow Screenshot 5: Audio Playback">
+                </a>
             </div>
         </section>
 
         <section id="download">
             <h2>Download SpeakFlow</h2>
             <p>Get the latest version of SpeakFlow for Windows directly from GitHub Releases:</p>
-            <a href="https://github.com/Olegiiich/SpeakFlow-TTS/releases/download/SpeakFlow_v1.0.0/SpeakFlow_v1.0.0_Windows.zip" class="button">Download SpeakFlow v1.0.0 (Windows)</a>
-            <p style="margin-top: 20px;">For source code and more details, visit the <a href="https://github.com/Olegiiich/SpeakFlow-TTS" style="color: var(--primary-color); text-decoration: underline;">SpeakFlow GitHub Repository</a>.</p>
+            <a href="https://github.com/Olegiiich/SpeakFlow-TTS/releases/download/SpeakFlow_v1.0.0/SpeakFlow.zip" class="button">Download SpeakFlow v1.0.0 (Windows)</a>
+            <p style="margin-top: 20px;">For source code and more details, visit the <a href="https://github.com/Olegiiich/SpeakFlow-TTS" style="color: #004d80; text-decoration: underline;">SpeakFlow GitHub Repository</a>.</p>
         </section>
     </div>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 SpeakFlow. All rights reserved. | <a href="https://github.com/Olegiiich/SpeakFlow-TTS">GitHub Repository</a></p>
+            <p>&copy; 2025 SpeakFlow. All rights reserved. | <a href="https://github.com/Olegiiich/SpeakFlow-TTS">GitHub Repository</a> | <a href="https://t.me/mlntsksoft" target="_blank">Telegram Page</a></p>
         </div>
     </footer>
 </body>
